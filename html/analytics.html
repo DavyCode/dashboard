@@ -7,7 +7,7 @@
 <!-- Mirrored from seantheme.com/source-admin-v1.5/admin/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Dec 2018 21:13:07 GMT -->
 <head>
 	<meta charset="utf-8" />
-	<title>Thrive Agric | Admin Dashboard</title>
+	<title>Source Admin | Dashboard</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -98,8 +98,8 @@
 				<!-- begin sidebar nav -->
 				<ul class="nav">
 				    <li class="nav-header">Menu</li>
-						<li class="has-sub active">
-							<a href="notifications.html">
+						<li class="has-sub">
+							<a href="index.html">
 							    <i class="fa fa-home"></i>
 							    <span>Dashboard</span>
 						    </a>
@@ -122,8 +122,8 @@
 							    <span>Reports</span>
 						    </a>
 						</li>
-						<li class="has-sub">
-							<a href="analytics.html">
+						<li class="has-sub active">
+							<a href="javascript:;">
 							    <i class="fa fa-chart-bar"></i>
 							    <span>Analytics</span>
 						    </a>
@@ -153,222 +153,6 @@
 		</div>
 		<div class="sidebar-bg"></div>
 		<!-- end #sidebar -->
-
-		<!-- begin #content -->
-		<div id="content" class="content">
-			<!-- begin breadcrumb -->
-			<ol class="breadcrumb pull-right">
-				<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-				<li class="breadcrumb-item active">Dashboard</li>
-			</ol>
-			<!-- end breadcrumb -->
-			<!-- begin page-header -->
-			<h1 class="page-header"><strong>Dashboard</strong></h1>
-			<!-- end page-header -->
-
-			<!-- begin row -->
-            <div class="row">
-                <!-- begin col-3 -->
-                <div class="col-lg-3 col-sm-6">
-                    <!-- begin widget -->
-                    <div class="widget widget-stat bg-primary text-white">
-                        <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
-                        <div class="widget-stat-icon"><i class="fa fa-users"></i></div>
-                        <div class="widget-stat-info">
-                            <div class="widget-stat-title">New Visitors</div>
-                            <div class="widget-stat-number">839</div>
-                            <div class="widget-stat-text">(3.10% better than last week)</div>
-                        </div>
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-3 -->
-                <!-- begin col-3 -->
-                <div class="col-lg-3 col-sm-6">
-                    <!-- begin widget -->
-                    <div class="widget widget-stat bg-success text-white">
-                        <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
-                        <div class="widget-stat-icon"><i class="fa fa-gem"></i></div>
-                        <div class="widget-stat-info">
-                            <div class="widget-stat-title">New Registered VIP</div>
-                            <div class="widget-stat-number">2,291</div>
-                            <div class="widget-stat-text">(10.2% better than last week)</div>
-                        </div>
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-3 -->
-                <!-- begin col-3 -->
-                <div class="col-lg-3 col-sm-6">
-                    <!-- begin widget -->
-                    <div class="widget widget-stat bg-grey text-white">
-                        <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
-                        <div class="widget-stat-icon"><i class="fa fa-hdd"></i></div>
-                        <div class="widget-stat-info">
-                            <div class="widget-stat-title">Total Bandwidth Used</div>
-                            <div class="widget-stat-number">982Gb</div>
-                            <div class="widget-stat-text">(1,239Gb Left)</div>
-                        </div>
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-3 -->
-                <!-- begin col-3 -->
-                <div class="col-lg-3 col-sm-6">
-                    <!-- begin widget -->
-                    <div class="widget widget-stat bg-inverse text-white">
-                        <div class="widget-stat-btn"><a href="#" data-click="widget-reload"><i class="fa fa-redo"></i></a></div>
-                        <div class="widget-stat-icon"><i class="fa fa-file"></i></div>
-                        <div class="widget-stat-info">
-                            <div class="widget-stat-title">Pending Invoice</div>
-                            <div class="widget-stat-number">29</div>
-                            <div class="widget-stat-text">(3 new transaction)</div>
-                        </div>
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-3 -->
-            </div>
-            <!-- end row -->
-
-            <!-- begin row -->
-            <div class="row">
-                <!-- begin col-6 -->
-                <div class="col-lg-12">
-                    <!-- begin widget -->
-                    <div class="widget widget-chart">
-                        <!-- begin widget-header -->
-                        <div class="widget-header bg-inverse-dark">
-                        	<ul class="widget-header-btn">
-														<li><a href="#" class="btn btn-white">1 Nov 2017 - 31 Nov 2017 <i class="fa fa-cog"></i></a></li>
-													</ul>
-													<h4 class="text-white">Visitor Analytics</h4>
-                        </div>
-                        <!-- end widget-header -->
-                        <!-- begin widget-body -->
-                        <div class="widget-body">
-												<!-- begin chart-placeholder -->
-												<ul class="widget-chart-placeholder text-center inline">
-													<li><span class="legend-circle bg-primary"></span> Total Visitors</li>
-													<li><span class="legend-circle bg-info"></span> New Visitors</li>
-													<li><span class="legend-circle bg-inverse"></span> Returned Visitors</li>
-												</ul>
-												<!-- end chart-placeholder -->
-												<!-- begin visitor-chart -->
-												<div id="flot-visitor-chart" class="m-b-15" data-height="230px"></div>
-												<!-- end visitor-chart -->
-												<!-- begin row -->
-                        	<div class="row col-lg-with-border">
-                        		<div class="col-lg-4 text-center">
-															<div class="m-b-2">Total Visitors</div>
-															<h4 class="m-0">3,192,489</h4>
-                        		</div>
-                        		<div class="col-lg-4 text-center">
-															<div class="m-b-2">Bounce Rate</div>
-															<h4 class="m-0">30.25%</h4>
-                        		</div>
-                        		<div class="col-lg-4 text-center">
-															<div class="m-b-2">Avg Time on Site</div>
-															<h4 class="m-0">00:03:42</h4>
-                        		</div>
-                        	</div>
-                        	<!-- end row -->
-                        </div>
-                        <!-- end widget-body -->
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
-
-            <!-- begin row -->
-            <div class="row">
-                <!-- begin col-4 -->
-                <div class="col-lg-4">
-                    <!-- begin widget -->
-                    <div class="widget">
-                        <div class="widget-header bg-inverse-dark">
-                            <ul class="widget-header-btn">
-                                <li><a href="javascript:;" class="btn btn-white"><i class="fa fa-plus"></i></a></li>
-                            </ul>
-                            <h4 class="text-white">Todo List</h4>
-                        </div>
-												<ul class="widget-todolist">
-													<li>
-                                <div class="checkbox">
-                                    <label>
-                                        <i class="far fa-square" data-click="todolist-checkbox"></i>
-                                        <input type="checkbox" name="todolist_checkbox" />
-                                    </label>
-                                </div>
-                                <div class="info">
-                                    <h4>A Form will be provided here for this function.</h4>
-                                    <p>Tomorrow 6:30pm</p>
-                                </div>
-                                <div class="action">
-                                    <a href="#" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="#">Edit</a></li>
-                                        <li><a href="#">Archive</a></li>
-                                        <li><a href="#">Delete</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-												</ul>
-                    </div>
-                </div>
-                <!-- end col-4 -->
-                <!-- begin col-4 -->
-                <div class="col-lg-8">
-                    <!-- begin widget -->
-                    <div class="widget">
-                        <div class="widget-header bg-inverse-dark">
-													<ul class="widget-header-btn">
-															<li><a href="javascript:;" class="btn btn-white"><i class="fa fa-calendar-week"></i></a></li>
-													</ul>
-                            <h4 class="text-white">Calender</h4>
-                        </div>
-                        <div class="widget-body p-0">
-                            <div data-scrollbar="true" data-height="347px">
-                                <ul class="widget-task-list">
-																	<li>
-																			<div id="schedule-calendar"></div>
-																	</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end col-4 -->
-            </div>
-            <!-- end row -->
-
-            <!-- begin #footer -->
-            <div id="footer" class="footer">
-                <span class="pull-right">
-                    <a href="javascript:;" class="btn-scroll-to-top" data-click="scroll-top">
-                        <i class="fa fa-arrow-up"></i> <span class="hidden-xs">Back to Top</span>
-                    </a>
-                </span>
-                &copy; 2018 <b>Source Admin</b> All Right Reserved
-            </div>
-            <!-- end #footer -->
-		</div>
-		<!-- end #content -->
-
-		<!-- begin #sidebar-right -->
-		<div id="sidebar-right" class="sidebar sidebar-right">
-			<!-- begin sidebar scrollbar -->
-			<div data-scrollbar="true" data-height="100%">
-			</div>
-			<!-- end sidebar scrollbar -->
-		</div>
-		<div class="sidebar-bg sidebar-right"></div>
-		<!-- end #sidebar-right -->
-	</div>
-	<!-- end page container -->
 
     <!-- begin theme-panel -->
     <div class="theme-panel">
